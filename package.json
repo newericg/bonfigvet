@@ -1,10 +1,11 @@
 {
   "name": "wireframe",
-  
+
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.9.0",
