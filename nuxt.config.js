@@ -4,7 +4,7 @@ import package_json from './package'
 
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   server: {
     // port: 8888,  // default: 3000
     // host: 0,     // default: localhost,
