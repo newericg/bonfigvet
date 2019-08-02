@@ -1,0 +1,16 @@
+{
+  "name": "wireframe",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.9.0",
+    "@nuxtjs/axios": "^5.3.6",
+    "flag-icon-css": "^3.3.0",
+    "nuxt": "^2.8.1",
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0-beta.6"
+  }
+}
