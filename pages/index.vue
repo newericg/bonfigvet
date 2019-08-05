@@ -1,5 +1,5 @@
 <template>
-  <section class="container" style="padding: 220px 0px 0px;">
+  <section class="container" style="padding: 220px 0px 70px;">
 
     <v-layout justify-center class="hidden-md-and-up">  
     <img :src="require('../assets/logooficial.jpeg')" class="logomob"> 
@@ -106,7 +106,7 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  opacity: 0.75;
+  opacity: 0.89;
 }
 
 .logomob:hover {
@@ -120,7 +120,7 @@
   width: 50%;
   height: 50%;
   border-radius: 20px;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .logodesk:hover {

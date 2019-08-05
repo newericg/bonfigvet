@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless>
+  <v-footer padless height="50">
     <v-layout justify-center text-center xs12>
       
       ©  {{ new Date().getFullYear() }} — <strong>Todos os direitos reservados</strong>
