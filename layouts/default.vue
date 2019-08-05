@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <img :src="require('../assets/fundo2.jpg')" id="bg" alt="">
+    <img :src="require('../assets/fundo3.jpg')" id="bg" alt="">
     <Toolbar/>
     <Toolbar2/>
     <v-content id="content" style="padding: 0px 25px 0px;">
@@ -37,8 +37,11 @@ export default {
   left: 0; 
 	
   /* Preserve aspet ratio */
-  min-width: 70%;
+  
+  min-width: 105%;
   min-height: 100%;
+  
+  
   
   overflow: hidden;
 }

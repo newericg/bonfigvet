@@ -11,14 +11,14 @@
       <v-spacer></v-spacer>
 
       <v-btn text >
-        <nuxt-link class="links green--text" to="about">Agendar</nuxt-link>
+        <nuxt-link class="links green--text" to="services">Agendar</nuxt-link>
       </v-btn>
       <v-btn text>
         <nuxt-link class="links green--text" to="services">Serviços</nuxt-link>
       </v-btn>
 
       <v-btn text>
-        <nuxt-link class="links green--text" to="services">Contato</nuxt-link>
+        <nuxt-link class="links green--text" to="about">Contato</nuxt-link>
       </v-btn>
 
       <v-spacer></v-spacer>
@@ -41,7 +41,7 @@ export default {
     scrollTo: function(id){     
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' })},
         update_scrolled_down() {
-      this.scrolled_down = (window.scrollY > 260)
+      this.scrolled_down = (window.scrollY > 460)
     },
     
   },

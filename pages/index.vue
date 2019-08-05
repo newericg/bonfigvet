@@ -1,14 +1,27 @@
 <template>
-  <section class="container" style="padding: 200px 0px 0px;">
+  <section class="container" style="padding: 220px 0px 0px;">
 
-    <v-layout justify-center>
-      
-    <img :src="require('../assets/logooficial.jpeg')" class="logo">
-      
+    <v-layout justify-center class="hidden-md-and-up">  
+    <img :src="require('../assets/logooficial.jpeg')" class="logomob"> 
     </v-layout>
+
+    <v-layout justify-center class="hidden-sm-and-down">  
+    <img :src="require('../assets/logooficial.jpeg')" class="logodesk"> 
+    </v-layout>
+    
     <br><br><br><br>
-    <h1>The Best Nuxt</h1>
-    <p class="subheading ">Weee've got the best nuxt's.</p>
+    <v-container grid-list-md text-xs-center>
+      <v-layout wrap>
+        <v-flex  pb-5 xs12 >
+          <h1>Medico Veterinário Domiciliar</h1>
+        </v-flex>
+
+        <v-flex text-center xs12>
+          <p class="subheading">"Todos os benefícios de uma clínica dentro de sua casa."</p>
+        </v-flex>
+      </v-layout>
+    </v-container>
+
     <v-flex class="backtext py-3 px-4">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
       consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
@@ -88,19 +101,32 @@
 }
 
 
-.logo{
+.logomob{
 
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   opacity: 0.75;
 }
 
-.logo:hover {
+.logomob:hover {
   opacity: 1.0;
   filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
+
+.logodesk{
+
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  opacity: 0.75;
+}
+
+.logodesk:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
 
   body {
     font-family: 'Montserrat';
@@ -112,12 +138,12 @@
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2em;
     text-transform: uppercase;
   }
 
   .subheading {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 2em;
     text-transform: uppercase;
     color: rgb(179, 179, 179);

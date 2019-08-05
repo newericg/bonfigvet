@@ -1,91 +1,26 @@
 <template>
   <section class="container backtext">
-    <h1>About our Nuxt's</h1>
-    <p class="subheading">They're juicy and stuff.</p>
+    <v-container grid-list-md text-xs-center>
+      <v-layout wrap >
+        <v-flex  pb-5 xs12  class="green--text">
+          <h1>Contato</h1>
+        </v-flex>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio consectetur, quia dolore veritatis quae quam nobis</p>
+        <v-flex text-center xs12>
+          <p>Segunda a sexta-feira das 08:00 às 20:00 horas. <br>
+            Sábados das 08:00 às 14:00 horas. <br>
+            *Exceto emergências <br> <br> <br>
+            <a href="tel:+5519991937377"><div>(19) 9.8837.9026</div></a> 
+            <address>Valinhos, SP</address><br>
+            <a href="mailto:bonfigliolivet@outlook.it"><div>bonfigliolivet@outlook.it </div></a>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </section>
 </template>
 
 <script>
-export default {
-    
-}
+  export default {
+
+  }
 </script>
-
-<style>
-
-.backtext{
-
-  background-color: rgba(255, 255, 255, 0.774);
-}
-
-body {
-    font-family: 'Montserrat';
-    margin: 0;
-  }
-
-  section {
-    padding: 5em;
-  }
-
-  h1 {
-    font-size: 3em;
-    text-transform: uppercase;
-  }
-
-  .subheading {
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    text-transform: uppercase;
-    color: rgb(179, 179, 179);
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-  }
-
-
-  .page-enter-active {
-    animation: bounce-in .8s;
-  }
-
-  .page-leave-active {
-    animation: bounce-out .5s;
-  }
-
-  @keyframes bounce-in {
-    0% {
-      transform: scale(.9);
-      opacity: 0;
-    }
-
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-
-  @keyframes bounce-out {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-
-    100% {
-      transform: scale(.9);
-      opacity: 0;
-    }
-  }
-
-  .links{
-
-    color: inherit;
-    text-decoration: none
-  }
-
-
-
-</style>
