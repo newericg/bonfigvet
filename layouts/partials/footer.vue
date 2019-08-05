@@ -1,9 +1,9 @@
 <template>
   <v-footer padless>
-    <v-layout justify-center xs12>
-      <v-flex text-center xs3>
+    <v-layout justify-center text-center xs12>
+      
       ©  {{ new Date().getFullYear() }} — <strong>Todos os direitos reservados</strong>
-      </v-flex>
+      
     </v-layout>
   </v-footer>
 </template>

@@ -1,9 +1,15 @@
 <template>
-  <section class="container" style="padding: 140px 0px 0px;">
+  <section class="container" style="padding: 200px 0px 0px;">
 
+    <v-layout justify-center>
+      
+    <img :src="require('../assets/logooficial.jpeg')" class="logo">
+      
+    </v-layout>
+    <br><br><br><br>
     <h1>The Best Nuxt</h1>
     <p class="subheading ">Weee've got the best nuxt's.</p>
-    <v-flex class="backtext py-4 px-4">
+    <v-flex class="backtext py-3 px-4">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
       consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
       molestiae.</p>
@@ -82,7 +88,18 @@
 }
 
 
+.logo{
 
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  opacity: 0.75;
+}
+
+.logo:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
 
 
   body {
