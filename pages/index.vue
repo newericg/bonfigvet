@@ -1,10 +1,10 @@
 <template>
-  <section class="container">
+  <section class="container" style="padding: 140px 0px 0px;">
 
     <h1>The Best Nuxt</h1>
-    <p class="subheading">Weee've got the best nuxt's.</p>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
+    <p class="subheading ">Weee've got the best nuxt's.</p>
+    <v-flex class="backtext py-4 px-4">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
       consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
       molestiae.</p>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
@@ -48,6 +48,8 @@
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
       consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
       molestiae.</p>
+    </v-flex>
+    
   </section>
 </template>
 
@@ -73,6 +75,16 @@
 </script>
 
 <style>
+
+.backtext{
+
+  background-color: rgba(255, 255, 255, 0.774);
+}
+
+
+
+
+
   body {
     font-family: 'Montserrat';
     margin: 0;

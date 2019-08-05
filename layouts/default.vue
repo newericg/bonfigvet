@@ -1,26 +1,27 @@
 <template>
   <v-app>
-    <img :src="require('../assets/hero.jpeg')" id="bg" alt="">
+    <img :src="require('../assets/fundo2.jpg')" id="bg" alt="">
     <Toolbar/>
     <Toolbar2/>
-    <v-content id="content">
+    <v-content id="content" style="padding: 0px 25px 0px;">
         <nuxt/>
     </v-content>
+    <Footer/>
   </v-app>
 </template>
 
 <script>
 
 import smoothscroll from 'smoothscroll-polyfill'
-import Nav from './partials/nav';
+import Footer from './partials/footer';
 import Toolbar from './partials/toolbar';
 import Toolbar2 from './partials/toolbar2'
 
 export default {
   components: {
-    Nav,
     Toolbar,
     Toolbar2,
+    Footer,
   },
   mounted(){
     smoothscroll.polyfill();
@@ -36,7 +37,8 @@ export default {
   left: 0; 
 	
   /* Preserve aspet ratio */
-  min-width: 165%;
+  min-width: 70%;
+  min-height: 100%;
   
   overflow: hidden;
 }

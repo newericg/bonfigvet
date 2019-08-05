@@ -1,17 +1,17 @@
 <template>
   <v-flex class="hidden-sm-and-down">
-    <v-app-bar flat app dark color="transparent">
+    <v-app-bar flat app :class="{transparent: !scrolled_down, white: scrolled_down}">
       <v-btn text >
-        <nuxt-link class="links white--text" to="/">Home</nuxt-link>
+        <nuxt-link class="links green--text" to="/">Home</nuxt-link>
       </v-btn>
 
       <v-spacer></v-spacer>
 
       <v-btn text >
-        <nuxt-link class="links white--text" to="about">Sobre</nuxt-link>
+        <nuxt-link class="links green--text" to="about">Sobre</nuxt-link>
       </v-btn>
-      <v-btn text class="white--text">
-        <span class="mr-2">Inscrição</span>
+      <v-btn text>
+        <nuxt-link class="links green--text" to="services">Serviços</nuxt-link>
       </v-btn>
 
       <v-btn text class="white--text" @click.prevent="scrollTo('programacao')" href="#programacao">
@@ -26,3 +26,26 @@
     </v-app-bar>
   </v-flex>
 </template>
+
+
+<script>
+export default {
+  data: function() {
+    return {
+      scrolled_down: false
+    }
+  },
+  
+  methods: {
+    scrollTo: function(id){     
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' })},
+        update_scrolled_down() {
+      this.scrolled_down = (window.scrollY > 260)
+    },
+    
+  },
+  mounted () {
+    window.addEventListener('scroll', this.update_scrolled_down);
+  }
+}
+</script>

@@ -1,7 +1,7 @@
 <template>
 <v-flex class="hidden-md-and-up">
   <v-app-bar app
-    flat dark color="transparent"
+    flat :class="{transparent: !scrolled_down, white: scrolled_down}"
   >
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -56,6 +56,19 @@ export default {
       drawer: null,
     }
   },
+
+
+  methods: {
+    scrollTo: function(id){     
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' })},
+        update_scrolled_down() {
+      this.scrolled_down = (window.scrollY > 160)
+    },
+    
+  },
+  mounted () {
+    window.addEventListener('scroll', this.update_scrolled_down);
+  }
 
 }
 </script>
