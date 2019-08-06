@@ -1,6 +1,6 @@
 <template>
-  <section class="" style="padding: 250px 0px 0px;">
-
+  <section class="" style="padding: 200px 0px 0px;">
+    <v-container grid-list-md text-xs-center class="full-height">
     <v-layout justify-center class="hidden-md-and-up">
       <img :src="require('../assets/logooficial.jpeg')" class="logomob">
     </v-layout>
@@ -10,7 +10,7 @@
     </v-layout>
 
     <br><br><br><br>
-    <v-container grid-list-md text-xs-center>
+    
       <v-layout wrap>
         <v-flex pb-3 xs12>
           <h1>Médico Veterinário Domiciliar</h1>
@@ -56,8 +56,8 @@
           <img :src="require('../assets/footerimg.png')" style="width:100%">
         </v-flex>
         <v-fab-transition>
-          <v-btn href="https://api.whatsapp.com/send?phone=5519988379026&amp;text=Olá! Gostaria de informações." :key="activeFab.icon" color="primary" fab large fixed bottom right>
-            <v-icon class="fab fa-whatsapp">
+          <v-btn href="https://api.whatsapp.com/send?phone=5519988379026&amp;text=Olá! Gostaria de informações." :key="activeFab.icon" color="primary" fab width="65px" height="65px" fixed bottom right>
+            <v-icon class="fab fa-whatsapp fa-2x">
             </v-icon>
           </v-btn>
         </v-fab-transition>
@@ -119,6 +119,11 @@
 </script>
 
 <style>
+
+.full-height {
+  height: 600px;
+}
+
   .backtext {
 
     background-color: rgba(255, 255, 255, 0.774);

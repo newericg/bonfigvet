@@ -48,7 +48,8 @@ export default {
   
   
   
-  overflow: hidden;
+  
+  
 }
 
 html {
