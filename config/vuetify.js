@@ -10,16 +10,11 @@ export default {
     icons: true, //true
   },
   theme: {
-    primary: 'rgba(170, 208, 99,)',
-    secondary: '#1abc9c',
-    accent: '#2980b9',
-    error: '#e74c3c',
-    action: '#23DB2A',
     dark: false,
     themes: {
       light: {
         custom: '#f20540',
-        primary: colors.blue.base,
+        primary: '#AAD063',
       },
       dark: {
         primary: "#05f230",

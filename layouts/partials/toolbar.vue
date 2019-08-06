@@ -3,7 +3,7 @@
     <v-app-bar flat app :class="{transparent: !scrolled_down, white: scrolled_down}">
       <v-spacer></v-spacer>
       <v-btn text >
-        <nuxt-link class="links" style="color: rgba(170, 208, 99)" to="/">Home</nuxt-link>
+        <nuxt-link class="links"  to="/">Home</nuxt-link>
       </v-btn>
 
       <v-spacer></v-spacer>
@@ -11,14 +11,14 @@
       <v-spacer></v-spacer>
 
       <v-btn text >
-        <nuxt-link class="links" style="color: rgba(170, 208, 99)" to="appointment">Agendar</nuxt-link>
+        <nuxt-link class="links" to="appointment">Agendar</nuxt-link>
       </v-btn>
       <v-btn text>
-        <nuxt-link class="links" style="color: rgba(170, 208, 99)" to="services">Serviços</nuxt-link>
+        <nuxt-link class="links"  to="services">Serviços</nuxt-link>
       </v-btn>
 
       <v-btn text>
-        <nuxt-link class="links" style="color: rgba(170, 208, 99)" to="about">Contato</nuxt-link>
+        <nuxt-link class="links"  to="about">Contato</nuxt-link>
       </v-btn>
 
       <v-spacer></v-spacer>
@@ -41,7 +41,7 @@ export default {
     scrollTo: function(id){     
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' })},
         update_scrolled_down() {
-      this.scrolled_down = (window.scrollY > 340)
+      this.scrolled_down = (window.scrollY > 620)
     },
     
   },

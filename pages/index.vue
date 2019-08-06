@@ -1,52 +1,70 @@
 <template>
   <section class="" style="padding: 220px 0px 0px;">
 
-    <v-layout justify-center class="hidden-md-and-up">  
-    <img :src="require('../assets/logooficial.jpeg')" class="logomob"> 
+    <v-layout justify-center class="hidden-md-and-up">
+      <img :src="require('../assets/logooficial.jpeg')" class="logomob">
     </v-layout>
 
-    <v-layout justify-center class="hidden-sm-and-down">  
-    <img :src="require('../assets/logooficial.jpeg')" class="logodesk"> 
+    <v-layout justify-center class="hidden-sm-and-down">
+      <img :src="require('../assets/logooficial.jpeg')" class="logodesk">
     </v-layout>
-    
+
     <br><br><br><br>
     <v-container grid-list-md text-xs-center>
       <v-layout wrap>
-        <v-flex pt-3 pb-3 xs12 >
+        <v-flex pt-3 pb-3 xs12>
           <h1>Médico Veterinário Domiciliar</h1>
         </v-flex>
 
         <v-flex pb-5 text-center xs12>
-          <p class="subheading">"Todos os benefícios de uma clínica dentro de sua casa."</p>
+          <div data-aos="fade-up-left">
+            <p class="subheading">"Todos os benefícios de uma clínica dentro de sua casa."</p>
+          </div>
         </v-flex>
       </v-layout>
     </v-container>
 
     <v-container class="backtext1 padtext" grid-list-md text-xs-center>
       <v-layout wrap>
-        <v-flex  pb-5 xs12 >
-          <h1>Serviços</h1>
+
+
+        <v-flex pt-4 text-center xs12>
+
+          <div data-aos="fade-up-left">
+            <i class="fal fa-files-medical fa-3x primary--text"></i> <br><br>
+            <p>Consultas</p>
+          </div>
         </v-flex>
 
-        <v-flex text-center xs12 md6>
-          <i class="fal fa-home fa-3x"></i> <br><br>
-          <p>Consultas</p>
-        </v-flex>
-        <v-flex text-center xs12 md6>
-          <i class="green--text fas fa-home fa-3x" ></i> <br><br>
+        <v-flex pt-4 text-center xs12>
+          <i class="fal fa-vial fa-3x primary--text"></i> <br><br>
           <p>Exames de Sangue</p>
         </v-flex>
-        <v-flex text-center xs12 md6>
-          <i class="green--text fas fa-home fa-3x" ></i> <br><br>
+        <v-flex pt-4 text-center xs12>
+          <i class="fal fa-syringe fa-3x primary--text"></i> <br><br>
           <p>Vacinas</p>
         </v-flex>
-        <v-flex text-center xs12>
-          <img :src="require('../assets/footerimg.png')" style="width:100%" >
+        <v-flex pt-4 text-center xs12>
+          <i class="fal fa-users-medical fa-3x primary--text"></i> <br><br>
+          <p>Outros Exames</p>
         </v-flex>
+        <v-flex pt-4 text-center xs12>
+          <i class="fal fa-ambulance fa-3x primary--text"></i> <br><br>
+          <p>Transporte</p>
+        </v-flex>
+        <v-flex text-center xs12>
+          <img :src="require('../assets/footerimg.png')" style="width:100%">
+        </v-flex>
+        <v-fab-transition>
+          <v-btn href="https://api.whatsapp.com/send?phone=5519988379026&amp;text=Olá! Gostaria de informações." :key="activeFab.icon" color="primary" fab large fixed bottom right>
+            <v-icon class="fab fa-whatsapp">
+            </v-icon>
+          </v-btn>
+        </v-fab-transition>
       </v-layout>
     </v-container>
 
-    
+
   </section>
 </template>
 
@@ -67,53 +85,83 @@
       }
 
 
-    }
+    },
+
+    data: () => ({
+      fab: false,
+      hidden: false,
+      tabs: null,
+    }),
+
+    computed: {
+      activeFab() {
+        switch (this.tabs) {
+          case 'one':
+            return {
+              color: 'success', icon: 'share'
+            }
+            case 'two':
+              return {
+                color: 'red', icon: 'edit'
+              }
+              case 'three':
+                return {
+                  color: 'green', icon: 'keyboard_arrow_up'
+                }
+                default:
+                  return {}
+        }
+      },
+    },
   }
+</script>
+}
 </script>
 
 <style>
+  .backtext {
 
-.backtext{
+    background-color: rgba(255, 255, 255, 0.774);
+  }
 
-  background-color: rgba(255, 255, 255, 0.774);
-}
+  .backtext1 {
 
-.backtext1{
-
-  background-color: white;
-}
-
+    background-color: white;
+  }
 
 
-.logomob{
 
-  width: 75%;
-  height: 100%;
-  border-radius: 20px;
-  opacity: 0.89;
-}
+  .logomob {
 
-.logomob:hover {
-  opacity: 1.0;
-  filter: alpha(opacity=100); /* For IE8 and earlier */
-}
+    width: 75%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.89;
+  }
+
+  .logomob:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+  }
 
 
-.logodesk{
+  .logodesk {
 
-  width: 40%;
-  height: 50%;
-  border-radius: 20px;
-  opacity: 0.85;
-}
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+    opacity: 0.85;
+  }
 
-.logodesk:hover {
-  opacity: 1.0;
-  filter: alpha(opacity=100); /* For IE8 and earlier */
-}
+  .logodesk:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+  }
 
   body {
-    font-family: 'Montserrat';
+
     margin: 0;
   }
 
@@ -172,11 +220,9 @@
     }
   }
 
-  .links{
+  .links {
 
     color: inherit;
     text-decoration: none
   }
-
-
 </style>

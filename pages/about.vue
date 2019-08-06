@@ -2,7 +2,7 @@
   <section class="container" style="padding: 70px 20px 0px;">
     <v-container grid-list-md text-xs-center >
       <v-layout wrap class="backtext">
-        <v-flex pt-4 pb-5 xs12  class="green--text">
+        <v-flex pt-4 pb-5 xs12  class="primary--text">
           <h1>Contato</h1>
         </v-flex>
 

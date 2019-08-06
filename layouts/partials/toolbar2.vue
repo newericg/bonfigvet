@@ -15,22 +15,22 @@
         <v-flex>
           <v-flex mt-4 d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="/">Home</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links"  to="/">Home</nuxt-link>
           </v-btn>
           </v-flex>
           <v-flex d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="appointment">Agendar</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links"  to="appointment">Agendar</nuxt-link>
           </v-btn>
           </v-flex>
           <v-flex d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="services">Serviços</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links"  to="services">Serviços</nuxt-link>
           </v-btn>
           </v-flex>
           <v-flex d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="about">Contato</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links"  to="about">Contato</nuxt-link>
           </v-btn>
           </v-flex>
         </v-flex>
@@ -57,7 +57,7 @@ export default {
     scrollTo: function(id){     
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' })},
         update_scrolled_down() {
-      this.scrolled_down = (window.scrollY > 510)
+      this.scrolled_down = (window.scrollY > 640)
     },
     
   },
