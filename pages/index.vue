@@ -1,5 +1,5 @@
 <template>
-  <section class="" style="padding: 190px 0px 0px;">
+  <section class="" style="padding: 250px 0px 0px;">
 
     <v-layout justify-center class="hidden-md-and-up">
       <img :src="require('../assets/logooficial.jpeg')" class="logomob">
@@ -12,7 +12,7 @@
     <br><br><br><br>
     <v-container grid-list-md text-xs-center>
       <v-layout wrap>
-        <v-flex pt-3 pb-3 xs12>
+        <v-flex pb-3 xs12>
           <h1>Médico Veterinário Domiciliar</h1>
         </v-flex>
 

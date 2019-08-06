@@ -43,7 +43,7 @@ export default {
 	
   /* Preserve aspet ratio */
   
-  min-width: 105%;
+  min-width: 125%;
   min-height: 100%;
   
   
