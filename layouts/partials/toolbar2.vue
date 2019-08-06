@@ -9,7 +9,7 @@
 
     <v-spacer></v-spacer>
 
-    <v-navigation-drawer app width="100%" color="rgba(255, 255, 255, 0.85)" v-model="drawer" temporary>
+    <v-navigation-drawer app width="100%" color="rgba(255, 255, 255, 0.92)" v-model="drawer" temporary>
       <v-layout row mt-4 column>
         <i role="button" @click="drawer = !drawer" class="v-icon notranslate v-icon--link mdi mdi-close theme--light"></i>
         <v-flex>

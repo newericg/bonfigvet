@@ -72,9 +72,4 @@ html {
   max-width: 100% !important
 }
 
-
-p {
-
-  color: rgba(170, 208, 99,)
-}
 </style>

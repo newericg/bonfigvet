@@ -1,5 +1,5 @@
 <template>
-  <section class="" style="padding: 220px 0px 0px;">
+  <section class="" style="padding: 190px 0px 0px;">
 
     <v-layout justify-center class="hidden-md-and-up">
       <img :src="require('../assets/logooficial.jpeg')" class="logomob">
@@ -184,7 +184,9 @@
 
   p {
     font-size: 1.2em;
-    line-height: 1.4em;
+    line-height: 1.8em;
+    text-justify: inter-word;
+
   }
 
 
@@ -223,6 +225,8 @@
   .links {
 
     color: inherit;
-    text-decoration: none
+    text-decoration: none;
+    font-weight: bold;
+    
   }
 </style>

@@ -9,9 +9,9 @@
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
-
+      
       <v-btn text >
-        <nuxt-link class="links" to="appointment">Agendar</nuxt-link>
+        <nuxt-link class="links" to="appointment"> Agendar</nuxt-link>
       </v-btn>
       <v-btn text>
         <nuxt-link class="links"  to="services">Serviços</nuxt-link>
