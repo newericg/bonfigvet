@@ -1,5 +1,5 @@
 <template>
-  <section class="" style="padding: 200px 0px 0px;">
+  <section class="" style="padding: 160px 0px 0px;">
     <v-container grid-list-md text-xs-center class="full-height">
     <v-layout justify-center class="hidden-md-and-up">
       <img :src="require('../assets/logooficial.jpeg')" class="logomob">
