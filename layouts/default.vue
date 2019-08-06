@@ -3,7 +3,7 @@
     <img :src="require('../assets/fundo3.jpg')" id="bg" alt="">
     <Toolbar/>
     <Toolbar2/>
-    <v-content id="content" style="padding: 0px 25px 0px;">
+    <v-content id="content" style="padding: 0px 0px 0px;" class="padtext">
         <nuxt/>
     </v-content>
     <Footer/>
@@ -87,5 +87,16 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.padtext{
+
+  max-width: 100% !important
+}
+
+
+p {
+
+  color: rgba(170, 208, 99,)
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="container" style="padding: 220px 0px 70px;">
+  <section class="" style="padding: 220px 0px 0px;">
 
     <v-layout justify-center class="hidden-md-and-up">  
     <img :src="require('../assets/logooficial.jpeg')" class="logomob"> 
@@ -12,62 +12,40 @@
     <br><br><br><br>
     <v-container grid-list-md text-xs-center>
       <v-layout wrap>
-        <v-flex  pb-5 xs12 >
-          <h1>Medico Veterinário Domiciliar</h1>
+        <v-flex pt-3 pb-3 xs12 >
+          <h1>Médico Veterinário Domiciliar</h1>
         </v-flex>
 
-        <v-flex text-center xs12>
+        <v-flex pb-5 text-center xs12>
           <p class="subheading">"Todos os benefícios de uma clínica dentro de sua casa."</p>
         </v-flex>
       </v-layout>
     </v-container>
 
-    <v-flex class="backtext py-3 px-4">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
-      consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
-      molestiae.</p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
-      consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
-      molestiae.</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
-      consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
-      molestiae.</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
-      consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
-      molestiae.</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div id="sobre">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
-      consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
-      molestiae.</p>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
-      consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
-      molestiae.</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sed tenetur quas! Laudantium odio
-      consectetur, quia dolore veritatis quae quam nobis aperiam saepe, modi quibusdam facere tenetur omnis earum
-      molestiae.</p>
-    </v-flex>
+    <v-container class="backtext1 padtext" grid-list-md text-xs-center>
+      <v-layout wrap>
+        <v-flex  pb-5 xs12 >
+          <h1>Serviços</h1>
+        </v-flex>
+
+        <v-flex text-center xs12 md6>
+          <i class="fal fa-home fa-3x"></i> <br><br>
+          <p>Consultas</p>
+        </v-flex>
+        <v-flex text-center xs12 md6>
+          <i class="green--text fas fa-home fa-3x" ></i> <br><br>
+          <p>Exames de Sangue</p>
+        </v-flex>
+        <v-flex text-center xs12 md6>
+          <i class="green--text fas fa-home fa-3x" ></i> <br><br>
+          <p>Vacinas</p>
+        </v-flex>
+        <v-flex text-center xs12>
+          <img :src="require('../assets/footerimg.png')" style="width:100%" >
+        </v-flex>
+      </v-layout>
+    </v-container>
+
     
   </section>
 </template>
@@ -100,10 +78,16 @@
   background-color: rgba(255, 255, 255, 0.774);
 }
 
+.backtext1{
+
+  background-color: white;
+}
+
+
 
 .logomob{
 
-  width: 100%;
+  width: 75%;
   height: 100%;
   border-radius: 20px;
   opacity: 0.89;
@@ -117,7 +101,7 @@
 
 .logodesk{
 
-  width: 50%;
+  width: 40%;
   height: 50%;
   border-radius: 20px;
   opacity: 0.85;

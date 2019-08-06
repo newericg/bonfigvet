@@ -3,7 +3,7 @@
   <v-app-bar app
     flat :class="{transparent: !scrolled_down, white: scrolled_down}"
   >
-    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon  @click="drawer = !drawer"></v-app-bar-nav-icon>
 
     <v-spacer></v-spacer>
 
@@ -15,22 +15,22 @@
         <v-flex>
           <v-flex mt-4 d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links green--text" to="/">Home</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="/">Home</nuxt-link>
           </v-btn>
           </v-flex>
           <v-flex d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links green--text" to="about">Agendar</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="appointment">Agendar</nuxt-link>
           </v-btn>
           </v-flex>
           <v-flex d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links green--text" to="services">Serviços</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="services">Serviços</nuxt-link>
           </v-btn>
           </v-flex>
           <v-flex d-flex>
           <v-btn text href="" >
-            <nuxt-link @click="drawer = !drawer" class="links green--text" to="about">Contato</nuxt-link>
+            <nuxt-link @click="drawer = !drawer" class="links" style="color: rgba(170, 208, 99)" to="about">Contato</nuxt-link>
           </v-btn>
           </v-flex>
         </v-flex>

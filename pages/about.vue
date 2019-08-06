@@ -1,12 +1,12 @@
 <template>
-  <section class="container backtext">
-    <v-container grid-list-md text-xs-center>
-      <v-layout wrap >
-        <v-flex  pb-5 xs12  class="green--text">
+  <section class="container" style="padding: 70px 20px 0px;">
+    <v-container grid-list-md text-xs-center >
+      <v-layout wrap class="backtext">
+        <v-flex pt-4 pb-5 xs12  class="green--text">
           <h1>Contato</h1>
         </v-flex>
 
-        <v-flex text-center xs12>
+        <v-flex pb-5 text-center xs12>
           <p>Segunda a sexta-feira das 08:00 às 20:00 horas. <br>
             Sábados das 08:00 às 14:00 horas. <br>
             *Exceto emergências <br> <br> <br>
