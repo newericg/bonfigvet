@@ -29,3 +29,24 @@
     </v-container>
   </section>
 </template>
+
+<script>
+  export default {
+    head() {
+      return {
+        title: 'Bonfiglioli',
+        meta: [{
+            name: 'description',
+            content: 'Clique no icone para agendar a consulta pelo WhatsApp!.'
+          },
+          {
+            name: 'keywords',
+            content: 'about nuxt, nuxt info'
+          },
+        ]
+      }
+
+
+    }}
+
+    </script>

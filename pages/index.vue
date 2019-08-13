@@ -72,14 +72,14 @@
   export default {
     head() {
       return {
-        title: 'NUXT Home',
+        title: 'Bonfiglioli',
         meta: [{
             name: 'description',
-            content: 'This is my about description here.'
+            content: 'Médico Veterinário Domicilar'
           },
           {
             name: 'keywords',
-            content: 'about nuxt, nuxt info'
+            content: 'Valinhos, Veterinário Domiciliar, Médico, Bonfiglioli, Clínica, Casa, Agendar '
           },
         ]
       }

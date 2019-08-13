@@ -15,7 +15,7 @@ export default {
     // }
   },
   head: {
-    title: 'wireframe',
+    title: 'Bonfiglioli',
     meta: 
       [
         { charset: 'utf-8' },

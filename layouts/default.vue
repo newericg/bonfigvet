@@ -1,6 +1,6 @@
 <template>
   <v-app class="fonte">
-    <img :src="require('../assets/fundo4.jpg')" id="bg" alt="">
+    <img :src="require('../assets/fundo8.jpg')" id="bg" alt="">
     <Toolbar/>
     <Toolbar2/>
     <v-content id="content" style="padding: 0px 0px 0px;" class="padtext">
