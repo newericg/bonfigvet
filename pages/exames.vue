@@ -21,8 +21,7 @@
             função do fígado, e rins, sorologias, entre outras opções. <br>
              Em todos os serviços oferecidos o proprietário
             não tem a necessidade de sair de casa.
-            <br>
-            Em todos os serviços oferecidos o proprietário não tem necessidade de sair de casa.
+            
             <br><br><br>
             <strong>
               Bonfiglioli, Todos os benefícios de uma clínica dentro de sua casa!</strong>

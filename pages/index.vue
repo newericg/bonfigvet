@@ -126,7 +126,7 @@
 
   .backtext {
 
-    background-color: rgba(255, 255, 255, 0.774);
+    background-color: rgba(255, 255, 255, 0.874);
   }
 
   .backtext1 {
