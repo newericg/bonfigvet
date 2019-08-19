@@ -16,7 +16,7 @@
         <v-flex px-3 pb-5 xs12>
           
             As consultas e atendimentos são exclusivamente domiciliares, o horário normal de atendimento é de segunda a
-            sexta feira das 07:00 às 19:00 horas e de sábados até às 12:00000 horas.
+            sexta feira das 07:00 às 19:00 horas e de sábados até às 12:00 horas.
             <br> <br>
             Nos demais horários esse trabalho é realizado apenas em casos emergenciais. As cirurgias são planejadas com
             antecedência mínima de uma semana para poder conciliar as agendas (proprietário, veterinário, anestesista e
