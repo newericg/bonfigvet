@@ -8,7 +8,7 @@
 
         <v-flex text-center xs12>
           <p>Segunda a sexta-feira das 07:00 às 19:00 horas. <br>
-            Sábados das 08:00 às 14:00 horas. <br>
+            Sábados até as 12:000 <br>
             *Exceto emergências <br> <br></p>
         </v-flex>
         <v-flex pb-4 text-center xs12>
