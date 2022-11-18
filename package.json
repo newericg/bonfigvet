@@ -11,7 +11,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "aos": "^2.3.4",
     "flag-icon-css": "^3.3.0",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.15.8",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
